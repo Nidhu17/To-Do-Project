@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro Todo App</title>
+
+  <!-- LINK CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MAIN APP CONTAINER -->
+<div class="app">
+
+  <!-- TITLE -->
+  <h2>My Todo App 🚀</h2>
+
+  <!-- INPUT SECTION (task + date + time) -->
+  <div class="input-section">
+
+    <!-- TASK INPUT -->
+    <input type="text" id="todo-input" placeholder="Add a task...">
+
+    <!-- DATE & TIME INPUT -->
+    <div class="datetime-group">
+      <input type="date" id="todo-date">
+      <input type="time" id="todo-time">
+    </div>
+
+    <!-- ADD BUTTON -->
+    <button id="add-btn">Add Task</button>
+  </div>
+
+  <!-- SEARCH INPUT -->
+  <input type="text" id="search" placeholder="Search tasks...">
+
+  <!-- FILTER BUTTONS -->
+  <div class="filters">
+    <button onclick="setFilter('all')">All</button>
+    <button onclick="setFilter('active')">Active</button>
+    <button onclick="setFilter('completed')">Done</button>
+  </div>
+
+  <!-- TASK LIST AREA -->
+  <ul id="todo-list"></ul>
+
+  <!-- CLEAR ALL BUTTON -->
+  <button id="clear-btn">Clear All</button>
+
+</div>
+
+<!-- LINK JS FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>

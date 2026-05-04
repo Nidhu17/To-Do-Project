@@ -1,0 +1,114 @@
+/* RESET DEFAULT STYLES */
+body {
+  margin: 100px;
+  font-family: sans-serif;
+
+  /* BACKGROUND IMAGE (LOCAL FILE) */
+  background-image: url("Zproject img.webp.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* CENTER APP */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* MAIN APP CARD */
+.app {
+  background: rgba(1, 6, 17, 0.9);
+  width: 700px;
+  padding: 27px;
+  border-radius: 15px;
+  height: 60vh;
+}
+/* TITLE STYLE */
+h2 {
+  text-align: center;
+  color: #38bdf8;
+}
+
+/* INPUT SECTION LAYOUT */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ALL INPUT FIELDS */
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #0f1a36;
+  color: rgb(241, 241, 241);
+  outline: none;
+}
+
+/* DATE & TIME SIDE BY SIDE */
+.datetime-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTON STYLE */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: white;
+  cursor: pointer;
+}
+
+/* FILTER BUTTONS */
+.filters {
+  display: flex;
+  margin-top: 10px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 2px;
+  background: #334155;
+}
+
+/* TASK LIST */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+/* EACH TASK ITEM */
+li {
+  background: #334155;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+
+/* TEXT INSIDE TASK */
+li div {
+  flex: 1;
+}
+
+/* COMPLETED TASK STYLE */
+.completed span {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+/* ICON BUTTONS */
+li button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
